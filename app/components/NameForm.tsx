@@ -4,10 +4,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Field } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { useState } from "react"
 
 export default function NameForm({ action }: { action: (formData: FormData) => void}) {
+
+    const [loading, setLoading] = useState(false);
+
     return (
-        <form action={action}>
+        <form action={action} onSubmit={() => setLoading(true)}>
             <Card className="w-full">
                 <CardHeader>
                     <CardTitle>Please enter your name...</CardTitle>
@@ -27,8 +31,8 @@ export default function NameForm({ action }: { action: (formData: FormData) => v
                         </Field>
                 </CardContent>
                 <CardFooter>
-                    <Button type="submit" className="w-full">
-                        Submit
+                    <Button type="submit" className="w-full" disabled={loading}>
+                        {loading ? "Loading..." : "Submit"}
                     </Button>
                 </CardFooter>
             </Card>
