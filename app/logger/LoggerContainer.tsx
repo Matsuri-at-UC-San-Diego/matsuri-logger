@@ -27,6 +27,8 @@ export default async function LoggerContainer() {
                 </p>
                 <ul className="pt-1 list-inside list-disc text-red-700 font-bold text-sm">
                     <li>Do not enter FAKE logs.</li>
+                    <li>Do not enter SHARE PHONES.</li>
+                    <li>LOG OUT OF SYSTEM WHEN DONE!</li>
                     <li>GREEN TICKET is worth $1. YELLOW TICKET is worth $1. </li>
                     <li>WHITE TICKET is ONE PORTION.</li>
                     <li>Use equivilency to determine COST. Reload page if price changes mid-night.</li>
