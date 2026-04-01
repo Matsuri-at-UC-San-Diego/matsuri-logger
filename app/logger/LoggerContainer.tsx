@@ -25,6 +25,15 @@ export default async function LoggerContainer() {
                 <p className="pt-1 text-sm">
                     Good evening, <b>{displayName}</b>. Please use this tool under the discretion of the instructions provided.
                 </p>
+                <ul className="pt-1 list-inside list-disc text-red-700 font-bold text-sm">
+                    <li>Do not enter FAKE logs.</li>
+                    <li>GREEN TICKET is worth $1. YELLOW TICKET is worth $1. </li>
+                    <li>WHITE TICKET is ONE PORTION.</li>
+                    <li>Use equivilency to determine COST. Reload page if price changes mid-night.</li>
+                </ul>
+                <a href="tel:+14245423061" className="pt-1 text-md text-blue-500 font-bold"> 
+                    CALL KENNY @ (424) 542-3061 FOR LOGGER ISSUES ASAP.
+                </a>
             </div>
             <UndoDialog />
             <div className="flex flex-col gap-8 my-5">
